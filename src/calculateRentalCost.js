@@ -16,7 +16,7 @@ function calculateRentalCost(days) {
     return basePrice - LONG_TERM_DISCOUNT;
   }
 
-  if (SMALL_TERM <= days) {
+  if (SMALL_TERM <= days && days <= LONG_TERM) {
     return basePrice - SMALL_TERM_DISCOUNT;
   }
 
